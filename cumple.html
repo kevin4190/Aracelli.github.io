@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños Aracelli</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body class="cumple">
+
+    <div class="contenedor">
+        <h1>🎂 ¡Feliz Cumpleaños, Aracelli! 🎂</h1>
+
+        <p>
+            Hola mi amor que este día sea un maravilloso día y por favor no te rayes espero y manifiesto qué sigamos dándonos alegrías sonrisas y momentos inolvidables eres lo mejor que me está pasando eres lo que pedía te quiero mucha señorita.
+        </p>
+
+        <p>✨ ¡Disfruta tu día señorita! ✨</p>
+    </div>
+
+    <!-- 🎵 Música -->
+    <audio id="musica" autoplay loop>
+        <source src="musica/Reina.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+    /* 🔊 asegura reproducción en algunos navegadores */
+    window.addEventListener("DOMContentLoaded", () => {
+        const musica = document.getElementById("musica");
+
+        if (musica) {
+            musica.play().catch(() => {
+                console.log("Autoplay bloqueado hasta interacción del usuario");
+            });
+        }
+    });
+    </script>
+
+</body>
+</html>
